@@ -1,26 +1,23 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - Entry point
- *
- * Return: Always 0 (Success/correct)
+ * Description: prints all single digit numbers of base 10
+ * starting from 0, followed by a new line.
+ * Return: Always 0 (Success)
  */
 int main(void)
-
 {
-char base_16;
+	char ch;
 
-for (base_16 = 48; base_16 <= 57; base_16++)
-{
-putchar (base_16);
-}
-
-for (base_16 = 97; base _16 <= 102; base_16++)
-{
-putchar (base_16);
-}
-
-putchar ('\n');
-
-return (0);
-
+	for (ch = '0'; ch <= '9'; ch++)
+	{
+		putchar(ch);
+	}
+	for (ch = 'a'; ch <= 'f'; ch++)
+	{
+		putchar(ch);
+	}
+	putchar('\n');
+	return (0);
 }
